@@ -9,17 +9,17 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async() => {
     console.log(`${bot.user.username} is online`);
-    bot.user.setActivity(`Prefix ${prefix}`)
+    bot.user.setActivity(`With MasterCoder#0001`)
 });
 
 bot.on("guildCreate", guild => {
     console.log(`I have been added to: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-    bot.user.setActivity(`Serving ${bot.guilds.size} servers | -help`);
+    bot.user.setActivity(`Serving ${bot.guilds.size} servers | w!help`);
   });
   
 bot.on("guildDelete", guild => {
    console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-   bot.user.setActivity(`Serving ${bot.guilds.size} servers | -help`);
+   bot.user.setActivity(`Serving ${bot.guilds.size} servers | w!help`);
 });
 
 bot.on("message", async message => {
