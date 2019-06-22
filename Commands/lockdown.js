@@ -1,4 +1,4 @@
-const discord = require('discord.js');
+const Discord = require('discord.js');
 exports.run = (client, message, args) => {
     if (!client.lockit) client.lockit = [];
     let time = args.join(' ');
