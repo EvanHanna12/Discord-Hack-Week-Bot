@@ -1,6 +1,5 @@
-const { Command } = require('klasa');
 
-module.exports = class extends Command {
+exports.run = class extends Command {
   constructor(...args) {
     super(...args, {
       name: 'lock',
