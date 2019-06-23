@@ -1,5 +1,5 @@
 
-module.run = class extends Command {
+exports.run = class extends Command {
   constructor(...args) {
     super(...args, {
       name: 'unlock',
