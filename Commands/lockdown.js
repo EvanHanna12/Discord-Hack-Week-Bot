@@ -1,5 +1,5 @@
 const ms = require('ms');
-module.run = (client, message, args) => {
+export.run = (client, message, args) => {
   if (!client.lockit) client.lockit = [];
   let time = args.join(' ');
   let validUnlocks = ['release', 'unlock'];
