@@ -1,5 +1,3 @@
-const {RichEmbed} = require("discord.js")
-const errors = require("../../utils/errors.js");
 
 exports.run = async (client, message, args) => {
   
