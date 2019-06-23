@@ -1,3 +1,4 @@
+ 
 exports.run = (client, message, args) =>{
     const setStatus = message.content.split(' ');
 
