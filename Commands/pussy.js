@@ -1,4 +1,4 @@
-module.exports.run = async (client, message) => {
+exports.run = async (client, message) => {
     if (!message.channel.nsfw) return message.channel.send("🔞 This channel has no NSFW option enabled.");
     const randomPuppy = require('random-puppy');
     var subreddits = [
